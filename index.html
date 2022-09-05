@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>E-commerce</title>
+   <link rel="stylesheet" href="/assets/css/style.css">
+   <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/logo-wh.svg" width="150px" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quien somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link text-body" id="open" href="#">Carrito</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="product-container">
+            <div id="modal_container" class="modal-container">
+              <div id="modalCart" class="modal-cart">
+                <button id="close" class="btn btn-danger btn-sm">X</button>
+                <h3 id="cartTitle">Carrito</h3>
+                <div id="cart-container"></div>
+              </div>
+            </div>
+    </main>
+   
+   <script src="/assets/js/app.js"></script>
+   <script src="/assets/js/cart.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
